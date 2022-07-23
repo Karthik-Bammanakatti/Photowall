@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    {% for photo in photos %}
+    <a href="/view/{{photo.sno}}">
+        <div class="cardelem">
+            <img src={{photo.url}} class="cardimage">
+            <div class="cardbody">
+                <div class="cardtitle">{{photo.title}}</div>
+                <div class="buttonholder">
+                    <div class="cardbutton remove-button"><a href="/delete/{{photo.sno}}">Remove</a></div>
+                    <div class="cardbutton"><a href="/update/{{photo.sno}}">Update</a></div>
+                </div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock body %}

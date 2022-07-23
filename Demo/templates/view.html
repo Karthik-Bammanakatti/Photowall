@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="cardelem">
+        <img src={{photo.url}} class="cardimage">
+        <div class="cardbody">
+            <div class="cardtitle">{{photo.title}}</div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

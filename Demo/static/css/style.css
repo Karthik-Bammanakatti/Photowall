@@ -1,0 +1,343 @@
+.nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: solid 2px black;
+    padding: 10px;
+    align-items: baseline;
+    
+}
+
+.head-logo {
+    font-family: 'Cookie', cursive;
+    font-size: 70px;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 230px;
+    margin-right: 30px;
+}
+
+.navs {
+    font-family: 'Poiret One', cursive;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px;
+    margin-top: -5px;
+    padding: 10px;
+    border-bottom: none;
+    cursor: pointer;
+    color: grey;
+    transition: 800ms;
+}
+
+.navs:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0px auto;
+    width: 1000px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    transition: 800ms;
+}
+
+@media (max-width: 672px ){
+   
+}
+
+@media (max-width: 1027px) {
+    .nav {
+        display: flex;
+        width: auto;
+        height: 60px;
+        background-color: white;
+        border-bottom: solid 2px black;
+        padding: 72px;
+        align-items: baseline;
+        flex-direction: row;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translate(0px, -70px);
+    }
+    @media (max-width: 1027px) and (min-width: 608px){
+        .nav {
+            display: flex;
+            width: auto;
+            height: 60px;
+            background-color: white;
+            border-bottom: solid 2px black;
+            padding: 30px;
+            align-items: baseline;
+            flex-direction: row;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            transform: translate(0px, -10px);
+        }
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: auto;
+        align-items: stretch;
+        transform: translate(0px, -100px);
+    }
+
+    .cardelem {
+        width: 85%;
+        margin: 0 auto;
+        box-shadow: 0 0px 19px 0 rgba(0, 0, 0, 0.2);
+        transform: translate(0px, 50px);
+        align-self: center;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        overflow: hidden;
+        transition: 800ms;
+    }
+
+    .adder {
+        width: 85%;
+        margin: 0 auto;
+        transform: translate(0px, 50px);
+        align-self: center;
+        overflow: hidden;
+        transition: 800ms;
+    }
+
+    .buttonholder {
+        margin-bottom: 10px;
+        margin-left: -20px;
+        border-top: solid 1px black;
+        width: calc(100% + 40px);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .updater{
+        margin-left: 20px;
+        margin-top: 70px;
+        transform: translate(25px, 50px);
+    }
+
+    .updater .finput{
+        height: 30px;
+        margin: 5px;
+        padding: 5px;
+        width: auto;
+        transform: translate(-5px, 0px);
+        border: solid 1px black;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        border-radius: 5px;
+    }
+
+    .cardbutton {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        height: auto;
+        width: auto;
+        max-width: calc(50% - 50px);
+        border: solid 1px rgb(8, 166, 240);
+        border-radius: 5px;
+        background-color: white;
+        margin-top: 25px;
+        padding: 8px;
+        text-align: center;
+        line-height: auto;
+        color: rgb(8, 166, 240);
+        cursor: pointer;
+        position: relative;
+        bottom: 10;
+        right: 20;
+        transition: 800ms; 
+    }
+}
+
+.cardelem {
+    flex-basis: calc(33.33%);
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-shadow: 0 0px 19px 0 rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    overflow: hidden;
+    transition: 800ms;
+}
+
+.cardelem:hover {
+    box-shadow: 0 0px 40px 0 rgba(12, 1, 1, 0.448);
+}
+
+
+.cardbody {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-top: -20px;
+}
+
+.cardtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.buttonholder {
+    margin-bottom: 10px;
+    margin-left: -20px;
+    border-top: solid 1px black;
+    width: calc(100% + 40px);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cardbutton {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    height: 22px;
+    width: auto;
+    max-width: calc(50% - 50px);
+    border: solid 1px rgb(8, 166, 240);
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 25px;
+    padding: 8px;
+    text-align: center;
+    line-height: 22px;
+    color: rgb(8, 166, 240);
+    cursor: pointer;
+    position: relative;
+    bottom: 10;
+    right: 20;
+    transition: 800ms; 
+}
+.formbutton {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    height: 40px;
+    width: auto;
+    border: solid 1px rgb(8, 166, 240);
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(8, 166, 240);
+    cursor: pointer;
+    transition: 800ms;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.updater{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+.adder {
+    flex-basis: calc(33.33%);
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: 800ms;
+}
+
+.adder .finput {
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+    transform: translate(-5px, 0px);
+    border: solid 1px black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+}
+
+.lable {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.finput{
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    transform: translate(-5px, 0px);
+    border: solid 1px black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+}
+.formbutton:hover {
+    background-color: rgb(8, 166, 240);
+    color: white;
+    border: solid 1px white;
+   
+}
+.remove-button {
+    border: solid 1px red;
+    color: red;
+}
+
+.cardbutton:hover {
+    background-color: rgb(8, 166, 240);
+    color: white;
+    border: solid 1px white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.remove-button:hover {
+    background-color: red;
+    color: white;
+    border: solid 1px white;
+}
+.cardimage {
+    width: 100%;
+    overflow: hidden;
+    transition: 800ms;
+}
+
+.cardimage:hover {
+    transform: scale(1.01);
+}

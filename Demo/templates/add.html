@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="adder">
+        <h1>Add new photo</h1>
+        <form action="/add" method="POST">
+            <label for="title" class="lable">Title:</label><br>
+            <input type="text" id="title" name="title" placeholder="Title" class="finput"><br>
+            <label for="url" class="lable">url:</label><br>
+            <input type="text" id="url" name="url" placeholder="url" class="finput"><br><br>
+            <input type="submit" value="Submit" class="formbutton">
+        </form>
+    </div>
+</div>
+{% endblock body %}

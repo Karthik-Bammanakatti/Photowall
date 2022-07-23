@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="cardelem">
+        <img src={{photo.url}} class="cardimage">
+        <div class="cardbody">
+            <div class="cardtitle">{{photo.title}}</div>
+        </div>
+    </div>
+    <div class="updater">
+        <form action="/update/{{photo.sno}}" method="POST">
+            <label for="title" class="lable">Title:</label><br>
+            <input type="text" id="title" name="title" placeholder="Title" class="finput"><br>
+            <label for="url" class="lable">url:</label><br>
+            <input type="text" id="url" name="url" placeholder="url" class="finput"><br><br>
+            <input type="submit" value="Submit" class="formbutton">
+        </form>
+    </div>
+</div>
+{% endblock body %}
